@@ -1,0 +1,569 @@
+html {
+  scroll-behavior: smooth;
+}
+body{
+    font-family: 'Varela Round', sans-serif;
+}
+
+hr {
+    display: block;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+  border: 0;
+  border-top: 0.1rem solid rgb(0, 0, 0);
+}
+/*=====================HEADER============*/
+
+/*==========TOP-BAR=======*/
+
+.top-bar{
+    background: #5417A2;
+}
+.top-bar a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.top-bar span{
+    color: #fdce34;
+}
+.top-bar a:hover{
+    color:  #fdce34;
+    transition: all 0.2s ease-in-out;
+}
+
+/*=========End top bar=====*/
+
+/*=======Nav-bar=======*/
+
+.navbar{
+    background: #2D0A5C;
+    box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .1);
+    z-index: 10;
+}
+.navbar-brand{
+    font-size: 1.4rem!important;   
+}
+.navbar button > span{
+    color: #FFFFFF;
+    font-size: 2.2rem;
+}
+.navbar a,
+.navbar .navbar-nav a{
+    color: #FFFFFF;
+    font-size: 1.1rem;
+}
+.navbar .navbar-nav a{
+    margin-right: 0.5rem;
+}
+.navbar .navbar-collapse span{
+    color:#fdce34;
+}
+.navbar a:hover{
+    color: #fdce34;
+    transition: all 0.2s ease-in-out;
+}
+
+
+/*=======End Nav-bar====*/
+
+
+/*========Header imagebar=======*/
+.main-banner{
+  position: relative;
+  text-align: center;
+  color: #ffffff;
+}
+.centered {
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.main-banner img{
+  width: 100%;
+  opacity: 0.6;
+}
+.main-banner a span{
+    font-size: 1.6rem;
+    color: #FFFFFF;
+}
+.main-banner a span:hover{
+    color: #fdce34;
+    cursor: pointer;
+}
+.main-banner .centered h1{
+    font-size: 6rem;
+}
+.main-banner .centered p{
+    font-size: 2rem;
+}
+.main-banner .centered h1 b{
+    color: #fdce34;
+}
+
+
+
+/*========End header imagebar======*/
+
+/*==================End Header============*/
+
+
+
+/*=========Section=============*/
+
+/*======ABOUT SECTION=======*/
+section{
+    margin-top: 7rem;
+}
+.about-section h1{
+    font-weight: 900;
+}
+.btn{
+    background: linear-gradient(120deg, #c9035f 10%, #fc3692 90%);
+    color: #FFFFFF!important;
+}
+
+/*====END ABOUT SECTION=====*/
+
+
+/*=====Services Section*/
+.services-section{
+    margin-top: 7rem;
+    background: #fdd141;
+}
+.services-section h1{
+    font-weight: 900;
+}
+.services-section .container{
+    padding: 4rem;
+}
+.service-section h1{
+    font-weight: 900;
+}
+.services-section .card{
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.services-section .second,
+.services-section .fourth,
+.services-section .sixth{
+    background: #fcda69;
+    border: 0.2rem solid #5417A2;
+    z-index: 1;
+}
+
+/*======End Services Section======*/
+
+
+
+
+
+
+/*====counting up animation=======*/
+.counter-section{
+    margin-top: 4rem;
+}
+.counter-section .jumbotron{
+    background: linear-gradient(120deg, #fc54a2 10%, #fc3692 90%);;
+}
+.counter-section{
+    color: #FFEEDB;
+}
+.counter-section .number{
+    font-size: 4rem;
+    font-weight: bolder;
+}
+
+/*=======End Counting Up Animation======*/
+
+
+
+
+/*======Team Section======*/
+.team-section{
+    margin-top: 4rem;
+    padding: 3rem;
+}
+.team-section h1{
+    font-weight: 900;
+}
+.team-section .card{
+    box-shadow: 6px 6px 5px #808080;
+    transition: all 0.3s ease-in-out 0.2s;
+}
+.team-section .card:hover{
+    transform: scale(1.1);
+}
+
+
+/*=====End Team Section=====*/
+
+
+/*=======Work Section=====*/
+
+.work-section{
+    margin-top: 6rem;
+    padding: 3rem;
+}
+.work-section h1{
+    font-weight: 900;
+}
+.work-section .flip-card-container{
+    width: 400px;
+    height: 266.59px;
+    perspective: 1200px;
+    margin-bottom: 2rem;
+}
+.work-section .flip-card{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+.work-section .flip-card-container:hover .flip-card{
+    transform: rotateY(180deg);
+    cursor: pointer;
+}
+.work-section .flip-card-front,
+.work-section .flip-card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.work-section .flip-card-front{
+    background-color: black;
+}
+.work-section .flip-card-back{
+    background: linear-gradient(120deg, #a1c4fd 10%, #5cb2da 100%);
+    color: #000000;
+    border-radius: 0.5rem;
+    transform: rotateY(180deg);
+}
+/*====End Work Section======*/
+
+
+
+/*=========Pricing Section======*/
+.pricing-section h1{
+    font-weight: 900;
+}
+.pricing-section .card{
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease-in-out;
+}
+.pricing-section .card:hover{
+    transform: translate(0, -16px);
+}
+.pricing-section .header p{
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+.pricing-section .basic-plan .header span{
+    color: #5cdf5c;
+}
+.pricing-section .pro-plan .header span{
+    color: #fc1313;
+}
+.pricing-section .premium-plan .header span{
+    color: #3838f1;
+}
+.pricing-section .pro-plan{
+    background: #FF9505;
+    color: white;
+    z-index: 0.7;
+}
+.pricing-section .card .card-body li{
+    margin: 0.5rem;
+    letter-spacing: 2px;
+}
+.pricing-section .pro-plan .btn{
+    background: white!important;
+    color: black!important;
+}
+
+
+
+/*=========End Pricing Section*/
+
+
+
+
+/*=======Contact Section=======*/
+
+.contact-section h1{
+    font-weight: 900;
+}
+.contact-section .row{
+    margin-top: 4rem;
+}
+.contact-section .card{
+    padding: 4rem;
+    background: #FF9505;
+    color: white;
+    border-radius: 1rem;
+}
+.contact-section .card h3{
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+.contact-section .card > div {
+    margin-top: 1.5rem;
+}
+.contact-section .card > div h5{
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+.contact-section .card > div p,
+.contact-section .card > div a {
+    font-weight: 600;
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: white;
+}
+.contact-section .contact-form h3{
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+.contact-section .contact-form input,
+.contact-section .contact-form textarea{
+    border-radius: 1rem;
+    padding: 1.4rem;
+}
+
+
+/*========End Contact Section=========*/
+
+
+/*=======Blog-Section========*/
+
+.blog-section h1{
+    font-weight: 900;
+}
+.blog-section .card{
+    border-radius: 0.3rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+.blog-section .card:hover{
+    cursor: pointer;
+}
+.blog-section .card .card-img-overlay span{
+    background: linear-gradient(120deg, #c9035f 10%, #fc3692 90%);
+    color: #ffffff;
+    padding: 0.5rem;
+}
+.blog-section .card-body h3{
+    font-weight: 700;
+}
+
+
+/*==========End Blog-Section========*/
+
+
+/*=====End Section=====*/
+
+
+/*======footer========*/
+
+.footer{
+    background: #2D0A5C;
+    color: #ffffff;
+    margin-top: 7rem;
+}
+.footer .row > div{
+    margin-top: 3.5rem;
+    margin-bottom: 2rem;
+}
+.footer a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.footer .row > div ul p,
+.footer .row > div > p{
+    font-weight: 700;
+}
+.footer li{
+    margin-bottom: 1rem;
+}
+.social-icons-footer{
+    text-align: center;
+}
+.footer .row .social-icons-footer{
+    padding: 3rem;
+}
+.social-icons-footer a span {
+    font-size: 1.7rem;
+    transition: all 0.4s ease-in-out;
+    margin: 0.2rem;
+}
+.social-icons-footer a span:hover{
+    color: #fdce34;
+    transform: translate(0, -10px);
+}
+
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 30px; 
+  z-index: 2;
+  padding: 0.5rem;
+  box-shadow: 0rem 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease-in-out;
+}
+#myBtn:hover{
+    transform: translate(0,-10px);
+}
+
+
+
+
+
+/*=======End footer======*/
+
+
+/*===========Media Queries========*/
+/*=====LARGE-SCREEN======*/
+@media screen and (max-width: 2716px) {
+     .work-section img{
+        width: 415px;
+        height: 235px;
+    }
+     .work-section .flip-card-container{
+    width: 415px;
+    height: 235px;
+    perspective: 1200px;
+    margin-bottom: 2rem;
+    }
+
+
+    
+}
+@media screen and (max-width: 1330px) {
+    .work-section img{
+        width: 310px;
+        height: 235px;
+    }
+     .work-section .flip-card-container{
+    width: 310px;
+    height: 235px;
+    perspective: 1200px;
+    margin-bottom: 2rem;
+}
+}
+
+
+@media screen and (max-width: 1200px) {
+    .team-section .card{
+        margin-bottom: 2.3rem;
+    }
+}
+
+
+@media screen and (max-width: 1024px) { 
+    .main-banner .centered h1{
+        font-size: 3.1rem;
+    }
+    .main-banner .centered p{
+        font-size: 1.1rem;
+    }
+    .about-section img{
+        margin-bottom: 2rem;
+    }
+    .work-section img{
+        width: 300px;
+        height: 240px;
+    }
+     .work-section .flip-card-container{
+    width: 300px;
+    height: 240px;
+    perspective: 1200px;
+    margin-bottom: 2rem;
+}
+}
+/*=====MEDIUM-SCREEN=====*/
+@media screen and (max-width: 768px) { 
+    .navbar {
+        position: relative !important;
+    }
+    .main-banner .centered h1{
+        font-size: 2.8rem;
+    }
+    .main-banner .centered p{
+        font-size: 1.5rem;
+    }
+    .blog-section .card {
+        margin-top: 2rem;
+    }
+
+}
+@media screen and (max-width: 702px) {
+    .work-section img{
+        width: 253px;
+        height: 240px;
+    }
+     .work-section .flip-card-container{
+    width: 253px;
+    height: 240px;
+    perspective: 1200px;
+    margin-bottom: 2rem;
+    }
+}
+
+
+/*========SMALL-SCREEN======*/
+@media screen and (max-width:572px) {
+    .main-banner .centered h1{
+        font-size: 2.3rem;
+    }
+    .main-banner .centered p{
+        font-size: 0.8rem;
+    }
+    .main-banner a span{
+        font-size: 1rem;
+    }
+    .counter-section > div > div > div > div{
+        margin-top: 2rem;
+    }
+    #myBtn{
+        visibility: hidden;
+    }
+}
+@media screen and (max-width:576px) and (min-width:425px) {
+    .work-section img{
+        width: 370px;
+        height: 260px;
+    }
+     .work-section .flip-card-container{
+    width: 370px;
+    height: 260px;
+    perspective: 1200px;
+    margin-bottom: 2rem;
+    }
+}
+/*=====VERY-SMALL-SCREEN*/
+@media screen and (max-width:424px) {
+    .main-banner .centered h1{
+        font-size: 1.8rem;
+    }
+    .main-banner .centered p{
+        font-size: 0.6rem;
+    }
+    .work-section img{
+        width: 260px;
+        height: 230px;
+    }
+     .work-section .flip-card-container{
+    width: 260px;
+    height: 230px;
+    perspective: 1200px;
+    margin-bottom: 2rem;
+    }
+}
+
+/*=======End Media Queries======*/
